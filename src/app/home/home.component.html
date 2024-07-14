@@ -1,0 +1,9 @@
+<app-header></app-header>
+<section class="home-section">
+  <section class="results">
+    <app-housing-location
+      *ngFor="let housingLocation of filteredLocationList"
+      [housingLocationIn]="housingLocation"
+    ></app-housing-location>
+  </section>
+</section>

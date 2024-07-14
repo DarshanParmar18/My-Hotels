@@ -1,0 +1,35 @@
+:host {
+  display: block;
+}
+
+.search-bar-container {
+  padding: 0 56px 0 8px;
+  background: #eaf1fb;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: ease-out 0.3s;
+
+  > input {
+    font-size: 1.1rem;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    background: inherit;
+    max-width: 352px;
+  }
+
+  &.opened {
+    background: white;
+    border-radius: 32px 32px 0 0;
+    margin: 0 5px;
+    min-width: 460px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 8px;
+  }
+}

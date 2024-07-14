@@ -1,0 +1,46 @@
+header {
+  max-width: 1360px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+
+    .brand-logo {
+      width: 3rem;
+    }
+    .brand-name {
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+  }
+
+  .right-nav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 70rem;
+    height: 100%;
+    align-items: center;
+    .header-navigations {
+      width: 25%;
+      .nav {
+        display: flex;
+        min-width: 140px;
+        justify-content: space-between;
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  header {
+    margin: 0 2rem;
+  }
+}

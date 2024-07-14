@@ -1,0 +1,31 @@
+<header class="header-section">
+  <div class="left-nav">
+    <a routerLink="">
+      <img
+        src="../assets/bird_2.svg"
+        alt="logo"
+        class="brand-logo"
+        aria-hidden="true"
+      />
+    </a>
+    <h2 class="brand-name"><i>Trav</i></h2>
+  </div>
+  <div class="right-nav">
+    <app-search-bar></app-search-bar>
+    <div class="header-navigations">
+      <ul class="nav">
+        <li>
+          <a [routerLink]="['/home']" routerLinkActive="router-link-active">
+            Home
+          </a>
+        </li>
+        <li>
+          <a> Extra </a>
+        </li>
+        <li>
+          <a> About </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
